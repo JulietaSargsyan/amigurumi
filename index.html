@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angry Octo — by Amigurumi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Custom cursor — octopus -->
+  <!-- <div id="cursor">
+    <img src="/assets/cursorOcto.png" alt="Octopus Cursor" class="cursor-img">
+  </div> -->
+
+  <!-- NAV -->
+  <nav>
+    <img src="/assets/logo.png" alt="Amigurumi Logo" class="nav-logo">
+    <ul class="nav-links">
+      <li><a href="#rarity">Collection</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#shop">Shop</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+
+    <!-- Bubbles -->
+    <div class="bubbles" id="bubbles"></div>
+
+    <!-- Fish -->
+    <div class="fish-group" id="fish"></div>
+
+    <!-- Ocean waves at bottom -->
+    <div class="ocean-layer">
+      <svg viewBox="0 0 1440 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,80 C240,160 480,0 720,80 C960,160 1200,20 1440,80 L1440,200 L0,200 Z" fill="#e8d4bb" opacity=".6"/>
+        <path d="M0,110 C320,60 560,160 900,100 C1100,70 1300,130 1440,120 L1440,200 L0,200 Z" fill="#f0b89a" opacity=".7"/>
+        <path d="M0,150 C180,120 420,180 720,150 C1020,120 1260,170 1440,155 L1440,200 L0,200 Z" fill="#fad9c4"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <div class="title-images">
+        <img src="/assets/Angry_Octo_Box_Angry.svg" alt="Angry" class="angry">
+        <img src="/assets/Angry_Octo_Octo.svg" alt="angry octo" class="octo">
+        <img src="/assets/Angry_Octo_Wow.svg" alt="angry octo" class="wow_badge">
+      </div>
+      <h1 class="hero-title">Angry Octo by Amigurumi Armenia</h1>
+
+      <img src="/assets/Angry_Octo_Character.svg" alt="Angry Octo Collection" class="octo-hero">
+
+      <p class="hero-desc">Handcrafted blind box octopuses - each grumpy, each unique. Collect common, rare &amp; legendary variants.</p>
+
+      <div class="hero-cta">
+        <a href="#rarity" class="btn btn-primary">🐙 View Collection</a>
+        <a href="#shop" class="btn btn-secondary">🛒 Notify Me</a>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <svg class="scroll-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none">
+        <path d="M9 3v12M4 10l5 5 5-5" stroke="#2A5C47" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="ticker"></div>
+  </div>
+
+  <!-- RARITY SECTION -->
+  <section id="rarity">
+    <div class="reveal">
+      <span class="section-label">The Collection</span>
+      <h2 class="section-title">Find Your <span>Rarity</span></h2>
+      <p class="section-intro">Each box hides one of 12 unique handmade octopuses. The rarer they are, the grumpier the legend.</p>
+    </div>
+
+    <div class="rarity-grid">
+
+      <!-- COMMON -->
+      <div class="rarity-card common reveal reveal-delay-1">
+        <div class="rarity-tier-badge">⭐ Common</div>
+        <div class="rarity-count">58<sub>/100</sub></div>
+        <div class="rarity-label">most adorable grumps</div>
+        <div class="octo-dots">
+          <div class="octo-dot" style="background:#d4c9b0"><img src="/assets/octos/Angry_Octo_Common_1.png" alt="octo" class="octo-img"></div>
+          <div class="octo-dot" style="background:#e8e0d4"><img src="/assets/octos/Angry_Octo_Common_2.png" alt="octo" class="octo-img"></div>
+          <div class="octo-dot" style="background:#c8a880"><img src="/assets/octos/Angry_Octo_Common_3.png" alt="octo" class="octo-img"></div>
+          <div class="octo-dot" style="background:#e8c888"><img src="/assets/octos/Angry_Octo_Common_4.png" alt="octo" class="octo-img"></div>
+          <div class="octo-dot" style="background:#d87050"><img src="/assets/octos/Angry_Octo_Common_5.png" alt="octo" class="octo-img"></div>
+        </div>
+        <p class="rarity-desc">Warm sandy tones. These everyday grumps are soft, chunky &amp; perfect for any desk or shelf.</p>
+      </div>
+
+      <!-- RARE -->
+      <div class="rarity-card rare reveal reveal-delay-2">
+        <div class="rarity-tier-badge">💜 Rare</div>
+        <div class="rarity-count">31<sub>/100</sub></div>
+        <div class="rarity-label">surprisingly moody</div>
+        <div class="octo-dots">
+          <div class="octo-dot" style="background:#6090c8"><img src="/assets/octos/Angry_Octo_Rare_1.png" alt="octo" class="octo-img"></div>
+          <div class="octo-dot" style="background:#8070c0"><img src="/assets/octos/Angry_Octo_Rare_2.png" alt="octo" class="octo-img"></div>
+          <div class="octo-dot" style="background:#3a3a4a"><img src="/assets/octos/Angry_Octo_Rare_3.png" alt="octo" class="octo-img"></div>
+          <div class="octo-dot" style="background:#508060"><img src="/assets/octos/Angry_Octo_Rare_4.png" alt="octo" class="octo-img"></div>
+        </div>
+        <p class="rarity-desc">Deep oceanic hues — blues, purples &amp; earthy darks. A rare find in the deep sea of grumpiness.</p>
+      </div>
+
+      <!-- LEGENDARY -->
+      <div class="rarity-card legendary reveal reveal-delay-3">
+        <div class="rarity-tier-badge">✨ Legendary</div>
+        <div class="rarity-count">11<sub>/100</sub></div>
+        <div class="rarity-label">ultra rare &amp; legendary</div>
+        <div class="octo-dots">
+          <div class="octo-dot" style="background:#e8883a"><img src="/assets/octos/Angry_Octo_Legendary_1.png" alt="octo" class="octo-img"></div>
+          <div class="octo-dot" style="background:#d0a870"><img src="/assets/octos/Angry_Octo_Legendary_2.png" alt="octo" class="octo-img"></div>
+          <div class="octo-dot" style="background:#c09858"><img src="/assets/octos/Angry_Octo_Legendary_3.png" alt="octo" class="octo-img"></div>
+        </div>
+        <p class="rarity-desc">Warm golds, deep spice &amp; mystery shades. Finding one means you've won the ocean.</p>
+      </div>
+
+    </div>
+
+    <p style="text-align:center; margin-top:40px; font-family:'Fredoka One',cursive; font-size:1.1rem; color:var(--teal-dark); opacity:.7;">
+      ✦ Collect Them All! ✦
+    </p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div>
+      <span class="section-label">Who We Are</span>
+      <h2 class="section-title">Handmade with <span>Love</span></h2>
+      <p class="section-intro">Every Angry Octo is crafted by hand in Armenia by the Amigurumi team. No two are exactly alike — that's the magic.</p>
+
+      <ul class="features-list">
+        <li>
+          <div class="feat-icon">🧶</div>
+          <div>
+            <strong>100% handcrafted</strong><br>
+            <span style="font-weight:600;opacity:.8;">Each octopus is individually hand-stitched with soft yarn and stuffing.</span>
+          </div>
+        </li>
+        <li>
+          <div class="feat-icon">🎲</div>
+          <div>
+            <strong>Blind box surprise</strong><br>
+            <span style="font-weight:600;opacity:.8;">You never know what you'll get — Common, Rare, or Legendary?</span>
+          </div>
+        </li>
+        <li>
+          <div class="feat-icon">🇦🇲</div>
+          <div>
+            <strong>Designed in Armenia</strong><br>
+            <span style="font-weight:600;opacity:.8;">Supporting local artisans with every single purchase.</span>
+          </div>
+        </li>
+        <li>
+          <div class="feat-icon">👶</div>
+          <div>
+            <strong>Ages 3 and up</strong><br>
+            <span style="font-weight:600;opacity:.8;">Safe, soft materials suitable for children and collectors alike.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="about-visual">
+      <div class="about-blob"></div>
+        <img src="/assets/octos/Angry_Octo_rare_1.png" alt="About Amigurumi Octo" class="about-octo">
+      <div class="armenia-badge">Designed with Love in Armenia ❤️💙🧡</div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how">
+    <div class="reveal">
+      <span class="section-label">Getting Started</span>
+      <h2 class="section-title">How Does a <span>Blind Box</span> Work?</h2>
+      <p class="section-intro">The thrill is in the mystery. Here's what happens when you order an Angry Octo.</p>
+    </div>
+
+    <div class="steps-row">
+      <div class="step reveal reveal-delay-1">
+        <div class="step-circle">
+          🛒
+          <div class="step-num">1</div>
+        </div>
+        <h4>Order Your Box</h4>
+        <p>Pick any quantity. Each box contains one surprise Angry Octo.</p>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="step-circle">
+          📦
+          <div class="step-num">2</div>
+        </div>
+        <h4>Unbox the Mystery</h4>
+        <p>Open to reveal your octopus — you won't know the rarity until you look inside!</p>
+      </div>
+      <div class="step reveal reveal-delay-3">
+        <div class="step-circle">
+          ❤️
+          <div class="step-num">3</div>
+        </div>
+        <h4>Meet Your Octo</h4>
+        <p>Common, Rare, or Legendary? Each one is uniquely grumpy and loveable.</p>
+      </div>
+      <div class="step reveal" style="transition-delay:.4s">
+        <div class="step-circle">
+          🌊
+          <div class="step-num">4</div>
+        </div>
+        <h4>Collect Them All</h4>
+        <p>With 12 unique designs, the hunt never gets old. Trade with friends!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMING SOON SHOP -->
+  <section id="shop">
+    <div class="reveal">
+      <span class="section-label">Shop</span>
+      <h2 class="section-title">The Ocean <span>Awaits</span></h2>
+      <p class="section-intro">Our shop is being built under the sea. Be first to know when Angry Octo drops.</p>
+    </div>
+
+    <div class="coming-soon-card reveal">
+      <span class="cs-emoji"><img src="/assets/octos/Angry_Octo_legendary_2.png" alt="angry octo" class="cs-icon"></span>
+      <h3 class="cs-title">Coming <span>Soon</span></h3>
+      <p class="cs-text">
+        We're stocking the shelves with grumpy little octopuses.<br>
+        Leave your email and we'll send you a splash when the shop goes live!
+      </p>
+      <div class="notify-form">
+        <input type="email" class="notify-input" placeholder="your@email.com" id="emailInput"/>
+        <button class="btn-notify" onclick="handleNotify()">Notify Me 🌊</button>
+      </div>
+      <p class="notify-note" id="notifyMsg">No spam. Just the splash you've been waiting for.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">angry <span style="color:white">octo</span></span>
+        <p>A collection of 100 unique handmade amigurumi blind box octopuses. Grumpy on the outside, full of love on the inside.</p>
+        <p class="armenia">🇦🇲 Made in Armenia</p>
+      </div>
+      <div>
+        <h5>Links</h5>
+        <ul>
+          <li><a href="#rarity">Collection</a></li>
+          <li><a href="#about">About Amigurumi</a></li>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#shop">Coming Soon</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:amigurumiarm@gmail.com">amigurumiarm@gmail.com</a></li>
+          <li><a href="tel:+37498458538">+374 (98) 458-538</a></li>
+          <li><a href="https://www.amigurumi.am" target="_blank">www.amigurumi.am</a></li>
+        </ul>
+        <div class="social-row" style="margin-top:20px">
+          <a href="https://instagram.com/amigurumi.arm" target="_blank" class="social-btn" title="Instagram"><img src="/assets/instagram.png" alt="Instagram" class="social-icon"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Amigurumi · Angry Octo. All rights reserved.</span>
+      <span>Made with <span class="heart">♥</span> <a href="https://sign-digital.com/" target="_blank" class="footer-link">by Sign Digital</a></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  </body>
+</html>
