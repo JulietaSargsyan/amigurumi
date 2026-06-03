@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angry Octo — от Amigurumi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- Custom cursor — octopus -->
+  <!-- <div id="cursor">
+    <img src="/assets/cursorOcto.png" alt="Курсор Осьминог" class="cursor-img">
+  </div> -->
+
+  <!-- NAV -->
+  <nav>
+    <img src="../assets/logo.png" alt="Логотип Amigurumi" class="nav-logo">
+    <ul class="nav-links">
+      <li><a href="#rarity">Коллекция</a></li>
+      <li><a href="#about">О нас</a></li>
+      <li><a href="#how">Как это работает</a></li>
+      <li><a href="#shop">Магазин</a></li>
+    </ul>
+    <div class="lang-switcher">
+      <select id="languageSwitcher">
+        <option value="hy">HY</option>
+        <option value="en">EN</option>
+        <option value="ru" selected>RU</option>
+      </select>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+
+    <!-- Bubbles -->
+    <div class="bubbles" id="bubbles"></div>
+
+    <!-- Fish -->
+    <div class="fish-group" id="fish"></div>
+
+    <!-- Ocean waves at bottom -->
+    <div class="ocean-layer">
+      <svg viewBox="0 0 1440 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,80 C240,160 480,0 720,80 C960,160 1200,20 1440,80 L1440,200 L0,200 Z" fill="#e8d4bb" opacity=".6"/>
+        <path d="M0,110 C320,60 560,160 900,100 C1100,70 1300,130 1440,120 L1440,200 L0,200 Z" fill="#f0b89a" opacity=".7"/>
+        <path d="M0,150 C180,120 420,180 720,150 C1020,120 1260,170 1440,155 L1440,200 L0,200 Z" fill="#fad9c4"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <div class="title-images">
+        <img src="../assets/Angry_Octo_Box_Angry.svg" alt="Злой" class="angry">
+        <img src="../assets/Angry_Octo_Octo.svg" alt="злой осьминог" class="octo">
+        <img src="../assets/Angry_Octo_Wow.svg" alt="злой осьминог" class="wow_badge">
+      </div>
+      <h1 class="hero-title">Angry Octo от Amigurumi Armenia</h1>
+
+      <img src="../assets/Angry_Octo_Character.svg" alt="Коллекция Angry Octo" class="octo-hero">
+
+      <p class="hero-desc">Ручные блайнд-боксы с осьминогами - каждый угрюмый, каждый неповторимый. Собирай обычные, редкие и легендарные варианты.</p>
+
+      <div class="hero-cta">
+        <a href="#rarity" class="btn btn-primary">🐙 Смотреть коллекцию</a>
+        <a href="#shop" class="btn btn-secondary">🛒 Уведомить меня</a>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Листай</span>
+      <svg class="scroll-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none">
+        <path d="M9 3v12M4 10l5 5 5-5" stroke="#2A5C47" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="ticker"></div>
+  </div>
+
+  <!-- RARITY SECTION -->
+  <section id="rarity">
+    <div class="reveal">
+      <span class="section-label">Коллекция</span>
+      <h2 class="section-title">Найди свою <span>Редкость</span></h2>
+      <p class="section-intro">В каждой коробке прячется один из 12 уникальных ручных осьминогов. Чем редкостнее - тем легендарнее угрюмость.</p>
+    </div>
+
+    <div class="rarity-grid">
+
+      <!-- COMMON -->
+      <div class="rarity-card common reveal reveal-delay-1">
+        <div class="rarity-tier-badge">⭐ Обычный</div>
+        <div class="rarity-count">58<sub>/100</sub></div>
+        <div class="rarity-label">самые милые брюзги</div>
+        <div class="octo-dots">
+          <div class="octo-dot" style="background:#d4c9b0"><img src="/assets/octos/Angry_Octo_Common_1.png" alt="осьминог" class="octo-img"></div>
+          <div class="octo-dot" style="background:#e8e0d4"><img src="/assets/octos/Angry_Octo_Common_2.png" alt="осьминог" class="octo-img"></div>
+          <div class="octo-dot" style="background:#c8a880"><img src="/assets/octos/Angry_Octo_Common_3.png" alt="осьминог" class="octo-img"></div>
+          <div class="octo-dot" style="background:#e8c888"><img src="/assets/octos/Angry_Octo_Common_4.png" alt="осьминог" class="octo-img"></div>
+          <div class="octo-dot" style="background:#d87050"><img src="/assets/octos/Angry_Octo_Common_5.png" alt="осьминог" class="octo-img"></div>
+        </div>
+        <p class="rarity-desc">Тёплые песочные оттенки. Эти повседневные брюзги мягкие, пухлые и отлично впишутся на любой стол или полку.</p>
+      </div>
+
+      <!-- RARE -->
+      <div class="rarity-card rare reveal reveal-delay-2">
+        <div class="rarity-tier-badge">💜 Редкий</div>
+        <div class="rarity-count">31<sub>/100</sub></div>
+        <div class="rarity-label">неожиданно угрюмые</div>
+        <div class="octo-dots">
+          <div class="octo-dot" style="background:#6090c8"><img src="/assets/octos/Angry_Octo_rare_1.png" alt="осьминог" class="octo-img"></div>
+          <div class="octo-dot" style="background:#8070c0"><img src="/assets/octos/Angry_Octo_rare_2.png" alt="осьминог" class="octo-img"></div>
+          <div class="octo-dot" style="background:#3a3a4a"><img src="/assets/octos/Angry_Octo_rare_3.png" alt="осьминог" class="octo-img"></div>
+          <div class="octo-dot" style="background:#508060"><img src="/assets/octos/Angry_Octo_rare_4.png" alt="осьминог" class="octo-img"></div>
+        </div>
+        <p class="rarity-desc">Глубокие морские оттенки - синие, фиолетовые и тёмно-землистые. Редкая находка из пучины угрюмости.</p>
+      </div>
+
+      <!-- LEGENDARY -->
+      <div class="rarity-card legendary reveal reveal-delay-3">
+        <div class="rarity-tier-badge">✨ Легендарный</div>
+        <div class="rarity-count">11<sub>/100</sub></div>
+        <div class="rarity-label">ультраредкий и легендарный</div>
+        <div class="octo-dots">
+          <div class="octo-dot" style="background:#e8883a"><img src="/assets/octos/Angry_Octo_legendary_1.png" alt="осьминог" class="octo-img"></div>
+          <div class="octo-dot" style="background:#d0a870"><img src="/assets/octos/Angry_Octo_legendary_2.png" alt="осьминог" class="octo-img"></div>
+          <div class="octo-dot" style="background:#c09858"><img src="/assets/octos/Angry_Octo_legendary_3.png" alt="осьминог" class="octo-img"></div>
+        </div>
+        <p class="rarity-desc">Тёплое золото, пряные оттенки и загадочные цвета. Если нашёл - считай, завоевал океан.</p>
+      </div>
+
+    </div>
+
+    <p style="text-align:center; margin-top:40px; font-family:'Fredoka One',cursive; font-size:1.1rem; color:var(--teal-dark); opacity:.7;">
+      ✦ Собери их всех! ✦
+    </p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div>
+      <span class="section-label">Кто мы</span>
+      <h2 class="section-title">Сделано с <span>Душой</span></h2>
+      <p class="section-intro">Каждый Angry Octo создаётся вручную в Армении командой Amigurumi. Двух одинаковых не существует - в этом и есть волшебство.</p>
+
+      <ul class="features-list">
+        <li>
+          <div class="feat-icon">🧶</div>
+          <div>
+            <strong>100% ручная работа</strong><br>
+            <span style="font-weight:600;opacity:.8;">Каждый осьминог вручную сшит из мягкой пряжи и набивки.</span>
+          </div>
+        </li>
+        <li>
+          <div class="feat-icon">🎲</div>
+          <div>
+            <strong>Сюрприз в каждой коробке</strong><br>
+            <span style="font-weight:600;opacity:.8;">Никогда не знаешь, что внутри - Обычный, Редкий или Легендарный?</span>
+          </div>
+        </li>
+        <li>
+          <div class="feat-icon">🇦🇲</div>
+          <div>
+            <strong>Разработано в Армении</strong><br>
+            <span style="font-weight:600;opacity:.8;">Каждая покупка поддерживает местных мастеров.</span>
+          </div>
+        </li>
+        <li>
+          <div class="feat-icon">👶</div>
+          <div>
+            <strong>Для детей от 3 лет</strong><br>
+            <span style="font-weight:600;opacity:.8;">Безопасные мягкие материалы - подходят и детям, и коллекционерам.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="about-visual">
+      <div class="about-blob"></div>
+        <img src="/assets/octos/Angry_Octo_rare_1.png" alt="Об Amigurumi Octo" class="about-octo">
+      <div class="armenia-badge">Создано с любовью в Армении ❤️💙🧡</div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how">
+    <div class="reveal">
+      <span class="section-label">С чего начать</span>
+      <h2 class="section-title">Как работает <span>Блайнд-бокс</span>?</h2>
+      <p class="section-intro">Весь кайф - в тайне. Вот что происходит, когда ты заказываешь Angry Octo.</p>
+    </div>
+
+    <div class="steps-row">
+      <div class="step reveal reveal-delay-1">
+        <div class="step-circle">
+          🛒
+          <div class="step-num">1</div>
+        </div>
+        <h4>Оформи заказ</h4>
+        <p>Выбери любое количество. В каждой коробке - один неизвестный Angry Octo.</p>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="step-circle">
+          📦
+          <div class="step-num">2</div>
+        </div>
+        <h4>Вскрой тайну</h4>
+        <p>Открой коробку и узнай своего осьминога - редкость раскроется только внутри!</p>
+      </div>
+      <div class="step reveal reveal-delay-3">
+        <div class="step-circle">
+          ❤️
+          <div class="step-num">3</div>
+        </div>
+        <h4>Познакомься с Octo</h4>
+        <p>Обычный, Редкий или Легендарный? Каждый по-своему угрюмый и невыносимо милый.</p>
+      </div>
+      <div class="step reveal" style="transition-delay:.4s">
+        <div class="step-circle">
+          🌊
+          <div class="step-num">4</div>
+        </div>
+        <h4>Собери всех</h4>
+        <p>12 уникальных дизайнов - охота не надоест никогда. Меняйся с друзьями!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMING SOON SHOP -->
+  <section id="shop">
+    <div class="reveal">
+      <span class="section-label">Магазин</span>
+      <h2 class="section-title">Океан <span>Ждёт</span></h2>
+      <p class="section-intro">Наш магазин строится на дне морском. Будь первым, кто узнает о старте Angry Octo.</p>
+    </div>
+
+    <div class="coming-soon-card reveal">
+      <span class="cs-emoji"><img src="/assets/octos/Angry_Octo_legendary_2.png" alt="злой осьминог" class="cs-icon"></span>
+      <h3 class="cs-title">Скоро <span>открытие</span></h3>
+      <p class="cs-text">
+        Мы заполняем полки угрюмыми маленькими осьминогами.<br>
+        Оставь свою почту - и мы пришлём тебе весточку, когда магазин откроется!
+      </p>
+      <div class="notify-form">
+        <input type="email" class="notify-input" placeholder="your@email.com" id="emailInput"/>
+        <button class="btn-notify" onclick="handleNotify()">Уведомить меня 🌊</button>
+      </div>
+      <p class="notify-note" id="notifyMsg">Без спама. Только та самая весточка, которую ты ждёшь.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">angry <span style="color:white">octo</span></span>
+        <p>Коллекция из уникальных ручных амигуруми-осьминогов в блайнд-боксах. Угрюмые снаружи - полные любви внутри.</p>
+        <p class="armenia">🇦🇲 Сделано в Армении</p>
+      </div>
+      <div>
+        <h5>Навигация</h5>
+        <ul>
+          <li><a href="#rarity">Коллекция</a></li>
+          <li><a href="#about">Об Amigurumi</a></li>
+          <li><a href="#how">Как это работает</a></li>
+          <li><a href="#shop">Скоро открытие</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Контакты</h5>
+        <ul>
+          <li><a href="mailto:amigurumiarm@gmail.com">amigurumiarm@gmail.com</a></li>
+          <li><a href="tel:+37498458538">+374 (98) 458-538</a></li>
+          <li><a href="https://www.amigurumi.am" target="_blank">www.amigurumi.am</a></li>
+        </ul>
+        <div class="social-row" style="margin-top:20px">
+          <a href="https://instagram.com/amigurumi.arm" target="_blank" class="social-btn" title="Instagram"><img src="/assets/instagram.png" alt="Instagram" class="social-icon"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Amigurumi · Angry Octo. Все права защищены.</span>
+      <span>Сделано с <span class="heart">♥</span> <a href="https://sign-digital.com/" target="_blank" class="footer-link">командой Sign Digital</a></span>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  </body>
+</html>
