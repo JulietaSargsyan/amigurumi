@@ -96,18 +96,19 @@ document.getElementById("emailInput").addEventListener("keydown", (e) => {
 
 const switcher = document.getElementById("languageSwitcher");
 
-switcher.addEventListener("change", (e) => {
-  const lang = e.target.value;
-
-  if (lang === "hy") {
-    window.location.href = "/";
-  } else {
-    window.location.href = `/${lang}/`;
-  }
-});
-
 const path = window.location.pathname;
-
 if (path.startsWith("/en")) switcher.value = "en";
 else if (path.startsWith("/ru")) switcher.value = "ru";
 else switcher.value = "hy";
+
+const newSwitcher = switcher.cloneNode(true);
+switcher.parentNode.replaceChild(newSwitcher, switcher);
+
+newSwitcher.addEventListener("change", (e) => {
+  const lang = e.target.value;
+  if (lang === "hy") {
+    window.location.replace("/");
+  } else {
+    window.location.replace(`/${lang}/`);
+  }
+});
